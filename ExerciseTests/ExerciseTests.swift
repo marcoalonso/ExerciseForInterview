@@ -3,7 +3,7 @@
 //  ExerciseTests
 //
 //  Created by Marco Alonso Rodriguez on 05/06/23.
-//
+///-* Unit Testing a un manager que consume una api y que se devuelve un error y el obj decodificado utilizando Delegation Pattern
 
 import XCTest
 @testable import Exercise
