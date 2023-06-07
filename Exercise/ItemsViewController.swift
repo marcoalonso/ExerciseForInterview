@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ItemsViewController: UIViewController {
     
     
     @IBOutlet weak var tableDemo: UITableView!
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: ManagerItemProtocol {
+extension ItemsViewController: ManagerItemProtocol {
     func showError(with: Error) {
         DispatchQueue.main.async {
             self.mostrarAlerta(titulo: "Warning", mensaje: "An error was found, \(with)")
@@ -59,7 +59,7 @@ extension ViewController: ManagerItemProtocol {
     
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension ItemsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tasks.count
     }
